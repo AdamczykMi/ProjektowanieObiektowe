@@ -12,7 +12,7 @@ struct Factorial<0> {
     static const unsigned long long value = 1;
 };
 
-// Template to calculate a single term of the Taylor series expansion of sin(x)
+
 template <int n, typename T>
 struct SinTerm {
     static T value(T x) {
@@ -20,7 +20,7 @@ struct SinTerm {
     }
 };
 
-// Template to generate and sum the first N terms of the Taylor series for sin(x)
+
 template <int N, typename T>
 struct SinSeries {
     static T value(T x) {

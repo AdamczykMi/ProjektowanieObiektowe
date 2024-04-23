@@ -1,6 +1,6 @@
 #include <iostream>
 
-// Template function to calculate the dot product of two vectors with arbitrary element types
+
 template<size_t N, typename T>
 T dot(T *x, T *y) {
     T sum = 0;
@@ -11,7 +11,7 @@ T dot(T *x, T *y) {
 }
 
 int main() {
-    // Example usage of the dot template with double type
+
     const size_t N = 3;
     double x[N] = {1.0, 2.0, 3.0};
     double y[N] = {4.0, 5.0, 6.0};
@@ -19,7 +19,7 @@ int main() {
     double result = dot<N, double>(x, y);
     std::cout << "Dot product of x and y is: " << result << std::endl;
 
-    // Example usage of the dot template with int type
+
     int x_int[N] = {1, 2, 3};
     int y_int[N] = {4, 5, 6};
 
